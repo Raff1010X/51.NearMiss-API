@@ -1,0 +1,66 @@
+{
+  "name": "nearmiss_api",
+  "version": "1.0.0",
+  "description": "Server for nearmiss app",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": "16.15.1"
+  },
+  "scripts": {
+    "start:prod": "NODE_ENV=production nodemon server.js",
+    "start:dev": "NODE_ENV=development nodemon server.js",
+    "start:test": "npx kill-port 3000 && NODE_ENV=test nodemon server.js",
+    "test": "jest --watchAll --detectOpenHandles --forceExit",
+    "debug": "NODE_ENV=development ndb server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Raff1010X/nearmiss_API.git"
+  },
+  "author": "Rafał Kowalczyk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Raff1010X/nearmiss_API/issues"
+  },
+  "homepage": "https://github.com/Raff1010X/nearmiss_API#readme",
+  "dependencies": {
+    "ba64": "^3.0.9",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.6",
+    "crypto": "^1.0.1",
+    "csurf": "^1.11.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.4.0",
+    "helmet": "^5.1.0",
+    "hpp": "^0.2.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.7.7",
+    "nodemon": "^2.0.18",
+    "pg": "^8.7.3",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jsdoc": "^39.3.3",
+    "eslint-plugin-jsx-a11y": "^6.6.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-react": "^7.30.1",
+    "jest": "^28.1.2",
+    "ndb": "^1.1.5",
+    "prettier": "^2.7.1",
+    "supertest": "^6.2.4"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+}

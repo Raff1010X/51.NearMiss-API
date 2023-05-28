@@ -1,0 +1,60 @@
+email	email_255
+password	string_8_50
+password_updated	string_8_50
+Adres email	email_255
+Numer zgloszenia	integer
+Zgłaszający	email_255
+Dział	list
+Miejsce	string_8_1024
+Data zdarzenia	date
+Godzina zdarzenia	hour
+Zagrożenie	list
+Opis Zagrożenia	string_8_1024
+Konsekwencje	list
+Skutek	string_8_1024
+Działania do wykonania	string_8_1024
+Zdjęcie	string_255
+Komentarz	string_255
+
+zgłaszający	email_255
+dział	list
+miejsce	string_8_1024
+zagrożenie	list
+opis	string_8_1024
+konsekwencje	list
+skutek	string_8_1024
+działania	string_8_1024
+status	list
+from	date
+to	date
+order	string_50
+offset	integer
+limit	integer=10
+desc	boolean_true
+comment_id	integer
+department_id	integer
+manager_id	integer
+function_id	integer
+report_id	integer
+user_id	UUID
+function	string_50
+department	string_50
+department_name	string_50
+user_email	email_255
+
+integer
+integer_10
+boolean_true
+date
+hour
+email_255
+string_255
+string_50
+string_8_1024
+string_8_50
+UUID
+list
+    Dział
+    Zagrożenie
+    Konsekwencje
+    Status
