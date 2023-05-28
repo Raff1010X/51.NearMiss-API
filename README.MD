@@ -1,6 +1,6 @@
 # Near-Miss Reporting App
 
-## Postgres-Database
+## Express-Server
 
 Express server for [NearMiss-Reporting](https://github.com/Raff1010X/50.NearMiss-WEB) Web App
 
