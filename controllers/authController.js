@@ -129,7 +129,7 @@ exports.login = catchAsync(async (req, res, next) => {
  * Logout user
  */
 exports.logout = catchAsync(async (req, res, next) => {
-    createSendToken('expired', 401, req, res);
+    createSendToken('expired', 200, req, res);
 });
 
 /**

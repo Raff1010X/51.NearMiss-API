@@ -79,6 +79,8 @@ app.use('/api/reports', require('./routes/reportRoutes'));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/other', require('./routes/otherRoutes'));
 app.use('/api/file', require('./routes/fileRoutes'));
+//** Server status
+app.get('/status',(req, res)=> res.status(200).send())
 
 //** Send response middleware
 app.use(require('./utils/sendResponse'));
